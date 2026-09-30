@@ -2486,3 +2486,29 @@ window.__MUGHAL_API__="https://mughaltraderdemotolive.lovable.app";
     rST();
   }).observe(document.body, { childList: true, subtree: true });
 })();
+
+// Activation System
+document.addEventListener("DOMContentLoaded",()=>{
+
+const btn=document.getElementById("activateBtn");
+
+if(btn){
+btn.onclick=()=>{
+
+let email=document.getElementById("emailInput").value;
+
+if(email.trim()==""){
+alert("Enter Registered Email");
+return;
+}
+
+// activation success
+localStorage.setItem("activated","true");
+
+alert("Access Activated Successfully");
+
+};
+
+}
+
+});
