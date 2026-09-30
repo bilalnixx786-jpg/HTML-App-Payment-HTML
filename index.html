@@ -1,12 +1,355 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BNDA CoDeX</title>
+
+<title>BNDA CoDeX Premium Access</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    background:#050505;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    max-width:430px;
+    margin:auto;
+    padding:20px;
+}
+
+
+/* BRAND */
+
+.brand{
+    text-align:center;
+    margin:30px 0;
+}
+
+.brand h1{
+    margin:0;
+    font-size:60px;
+    font-weight:900;
+    letter-spacing:5px;
+    color:#ffffff;
+    text-shadow:0 0 25px #ffc400;
+}
+
+.brand h2{
+    margin:0;
+    font-size:38px;
+    letter-spacing:8px;
+    color:#ffc400;
+    text-shadow:0 0 20px #ffc400;
+}
+
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+
+/* CARDS */
+
+.card{
+
+    background:#111;
+    border:2px solid #ffc400;
+    border-radius:25px;
+    padding:22px;
+    margin-bottom:25px;
+    box-shadow:0 0 20px rgba(255,196,0,.4);
+
+}
+
+
+.title{
+    text-align:center;
+    color:#ffc400;
+    font-size:24px;
+}
+
+
+.price{
+    text-align:center;
+    color:#ffc400;
+    font-size:60px;
+    font-weight:bold;
+}
+
+
+.center{
+    text-align:center;
+    color:#aaa;
+    font-size:18px;
+}
+
+
+
+/* ADDRESS */
+
+.address{
+
+    background:#000;
+    border:1px solid #555;
+    border-radius:12px;
+    padding:15px;
+    word-break:break-all;
+    margin-top:10px;
+    color:white;
+
+}
+
+
+button{
+
+    width:100%;
+    margin-top:12px;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#ffc400;
+    color:#000;
+    font-size:17px;
+    font-weight:bold;
+
+}
+
+
+input{
+
+    width:100%;
+    padding:15px;
+    margin-top:10px;
+    background:#000;
+    color:white;
+    border:1px solid #555;
+    border-radius:12px;
+    font-size:16px;
+
+}
+
+
+/* CONTACT */
+
+.contact{
+
+    border-color:#00ff66;
+    box-shadow:0 0 20px #00ff66;
+
+}
+
+
+.contact button{
+
+    background:#00ff66;
+
+}
+
+
+
+.footer{
+
+    text-align:center;
+    color:#777;
+    margin:25px;
+
+}
+
+
+</style>
+
 </head>
 
-<body>
-<h1>BNDA CoDeX Activation</h1>
-<p>Coming Soon</p>
-</body>
 
+<body>
+
+
+<div class="container">
+
+
+<div class="brand">
+
+<h1>BNDA</h1>
+
+<h2>CoDeX</h2>
+
+</div>
+
+
+<div class="subtitle">
+
+Premium Access Activation
+
+</div>
+
+
+
+<div class="card">
+
+<h2 class="title">
+ACTIVATE ACCESS
+</h2>
+
+
+<div class="price">
+$70
+</div>
+
+
+<p class="center">
+ONE TIME PAYMENT<br>
+1 DEVICE LOCK • FULL ACCESS
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h2 class="title">
+PAYMENT METHOD
+</h2>
+
+
+<h3>USDT TRC20</h3>
+
+
+<div class="address" id="trc">
+
+THtEDZ8xCgR3SwR3qmdXDbKbSAibsRNxPu
+
+</div>
+
+
+<button onclick="copyText('trc')">
+
+COPY TRC20 ADDRESS
+
+</button>
+
+
+
+
+<h3>USDT BEP20</h3>
+
+
+<div class="address" id="bep">
+
+0xebc06e15193c16abbddbd87c2fbe3e774eec45a3
+
+</div>
+
+
+<button onclick="copyText('bep')">
+
+COPY BEP20 ADDRESS
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+ACTIVATION
+
+</h2>
+
+
+<input placeholder="Enter Registered Email">
+
+
+<button>
+
+ACTIVATE ACCESS
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card contact">
+
+
+<h2 class="title">
+
+GET ACCESS
+
+</h2>
+
+
+<p class="center">
+
+Contact Admin Below
+
+</p>
+
+
+<button>
+WhatsApp Support
+</button>
+
+
+<button>
+Telegram Support
+</button>
+
+
+</div>
+
+
+
+<div class="footer">
+
+Secure Access System<br>
+BNDA CoDeX
+
+</div>
+
+
+</div>
+
+
+
+
+<script>
+
+function copyText(id){
+
+let text=document.getElementById(id).innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Address Copied");
+
+}
+
+</script>
+
+
+</body>
 </html>
